@@ -2,17 +2,17 @@
 
 Dockerfile copies python parts, including the [entrypoint.py](./entrypoint.py) file to the image. Build this:
 
-    docker build -t sample-python-app-subprocess:1.0.0 .
+    docker build -t sample-python-app-subprocess .
 
 Run:
 
     # Prebuilt version
 
-    docker run thedoh/sample-python-app-subprocess:1.0.0
+    docker run thedoh/sample-python-app-subprocess:latest
 
     # Build it yourself version
 
-    docker run sample-python-app-subprocess:1.0.0
+    docker run sample-python-app-subprocess
 
 ## Program Flow
 

@@ -2,15 +2,15 @@
 
 Dockerfile copies python parts, including the [entrypoint.py](./entrypoint.py) file to the image. Build this:
 
-    docker build -t sample-python-app-execv:1.0.0 .
+    docker build -t sample-python-app-execv .
 
 Run:
 
     # Run the pre-built
-		docker run thedoh/sample-python-app-execv:1.0.0
+		docker run thedoh/sample-python-app-execv:latest
 
     # Or the one you built yourself
-    docker run sample-python-app-execv:1.0.0
+    docker run sample-python-app-execv
 
 ## Program Flow
 

@@ -2,17 +2,17 @@
 
 Dockerfile copies python parts, including the [entrypoint.py](./entrypoint.py) file to the image. Build this:
 
-    docker build -t sample-python-app-factory:1.0.0 .
+    docker build -t sample-python-app-factory .
 
 Run:
 
     # Prebuilt
 
-    docker run -p 5000:5000 thedoh/sample-python-app-factory:1.0.0
+    docker run -p 5000:5000 thedoh/sample-python-app-factory:latest
 
     # The one built above
 
-    docker run -p 5000:50000 -i sample-python-app-factory:1.0.0
+    docker run -p 5000:50000 -i sample-python-app-factory
 
 In another terminal:
 
